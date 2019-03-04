@@ -17,6 +17,4 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
   - docker push stephengrider/multi-client
-  - docker push stephengrider/multi-nginx
-  - docker push stephengrider/multi-server
-  - docker push stephengrider/multi-worker
+
